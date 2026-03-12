@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta property="og:type" content="website">
+<meta property="og:title" content="RayView">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="RayView">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Rayy Summers">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>RayView</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+<!-- Inter Font -->
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+<!-- Heti Chinese Typography -->
+<link rel="stylesheet" href="https://unpkg.com/heti/umd/heti.min.css">
+
+<!-- Zhudou Sans & Source Han Sans SC -->
+<style>
+@font-face {
+  font-family: 'Zhudou Sans';
+  src: url('https://raw.githubusercontent.com/Buernia/Zhudou-Sans/main/fonts/webfont/ZhudouSansVF.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Han Sans SC';
+  src: url('/fonts/SourceHanSansSC-VF.ttf.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: Inter, 'Zhudou Sans', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+/* Heti 字体继承 */
+.heti {
+  font-family: inherit;
+}
+</style>
+
+<!-- Heti Enhancement Script -->
+<script src="https://unpkg.com/heti/umd/heti-addon.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const heti = new Heti('.post-body, .entry-content');
+  heti.autoSpacing();
+});
+</script>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">RayView</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-user fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Rayy Summers</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/03/15/%E5%A4%B1%E8%B8%AA%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%9C%88-%E6%88%91%E5%9C%A8%E5%BF%99%E4%BB%80%E4%B9%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Rayy Summers">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RayView">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | RayView">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/03/15/%E5%A4%B1%E8%B8%AA%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%9C%88-%E6%88%91%E5%9C%A8%E5%BF%99%E4%BB%80%E4%B9%88/" class="post-title-link" itemprop="url">失踪的两个月：我在忙什么</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-03-15 00:00:00" itemprop="dateCreated datePublished" datetime="2026-03-15T00:00:00+08:00">2026-03-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-03-12 16:07:42" itemprop="dateModified" datetime="2026-03-12T16:07:42+08:00">2026-03-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%8D%8A%E6%9C%88%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">半月记</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>大家好 (๑╹◡╹)ﾉ” 我踏“马”归来了😆！大家马年快乐！🐎</p>
+<p>本频道上次更新已经是两个月前了。停更的这段时间我发生了什么？其实很简单——放寒假了，人就懒了！所以这次一口气更新三篇，把欠下的都补上。</p>
+<p><strong>本期目录</strong>：<br>一、不怕恐怖游戏：恐惧与勇气<br>二、逃出大厦：职场第一课<br>三、低经济幸福：GDP 不决定一切</p>
+<p>还有两个话题因为内容太丰富，值得单独成篇，所以不放在本期目录里：一篇是关于我换了新手机，分享了换机动机、挑选心得，还有一点点使用体验；另一篇则是我养“小龙虾”（OpenClaw）的经历，从零基础小白安装 Node.js，到熟悉 TUI 界面，再到在 AI 协助下调试和报告问题。</p>
+<h1 id="一、不怕恐怖游戏：恐惧与勇气"><a href="#一、不怕恐怖游戏：恐惧与勇气" class="headerlink" title="一、不怕恐怖游戏：恐惧与勇气"></a>一、不怕恐怖游戏：恐惧与勇气</h1><p>寒假来临，面对突如其来的悠闲，我决定找点刺激。</p>
+<p>Steam 上有一款游戏叫《黑暗欺骗（Dark Deception）》。</p>
+<p>\游戏页面截图</p>
+<p>简单来说，它采用了我们熟悉的吃豆人（Pac-man）玩法，但改成了 3D 第一人称视角，而且地图不会显示敌人位置。因此这个游戏非常难——至少在我看来，实际玩起来比看别人玩要难得多。你必须随时听声辨位，确认敌人动向，规划收集地图上物品的路线，还要提防被包抄。</p>
+<p>\游戏截图（包含地图和怪物的图）</p>
+<p>刚下载完，我就感受到了一种连高考都远远不及的压力。那是人类最原始的本能——战或逃！不过这次，我只能逃。全程以被狩猎者的视角游玩，体内祖先的基因仿佛在这一刻被彻底唤醒。</p>
+<p>‼️<strong>剧透警告</strong>：接下来的内容会涉及部分游戏剧情，可能影响你的游戏体验。但如果你确定不会玩这个游戏，不妨把它当作一个故事来听——这个游戏的剧情其实挺有意思的。</p>
+<p>第一关追你的是旅馆里的猴子，脚步声很大，但特别擅长包抄。这一关玩家操纵的角色还没有任何技能，只能手无寸铁地收集几百个灵魂碎片。</p>
+<p>我花了整整一个星期才通过第一关。那段时间，我既不敢打开游戏，又忍不住想玩——典型的“又菜又爱玩”。</p>
+<p>第二关场景换到了学校，追你的是一个移速很快的小女孩阿加莎（Agatha）。她走路几乎没有声音，只有迎头撞上才知道她来了——没有上一关猴子那样的脚步声预警，导致跳杀（jump scare）频繁出现，反应时间也大大缩短。打到下半场，小女孩还会获得瞬移能力，突然出现在你面前，逼你比地图软件还快地规划逃离路线。好在第二关玩家有了加速技能，能跑得比她快。通关后，玩家也能获得阿加莎的传送技能，可以向前瞬移一段距离。</p>
+<p>第三关给我的压力是最大的——前后关卡都无法相比。场景设在一座豪华庄园，追你的是“黄金看守者”（Gold Watcher）：穿着 18 世纪法国制服的男人，皮肤如同黄金铸造，脸上戴着面具般的诡异笑容。但这些“男人”其实是雕塑，它们不会在你的视线范围内移动，可一旦脱离你的视线，就会瞬移接近，直到触碰到你。</p>
+<p>机制很简单，类似 SCP-173。但雕像瞬移的“刷刷”声极其微弱，很难判断方向，即使接近你也可能毫无察觉，比第二关的小女孩阿加莎还要恐怖——几乎是零反应的跳杀（jump scare）。</p>
+<p>在我几乎要弃游的时候，转机出现了。看了无数通关视频后，我决定改变策略。最终发现：黄金看守者的速度其实没有想象中那么快，只要你不回头看它在哪里，就完全不会被追上。这一刻我才意识到，之前的恐惧才是失败的根源。当我知道雕像永远追不上我时，才真切体会到那句话：“恐惧源自未知”。</p>
+<p>之后的关卡机制大同小异，但有一章专门揭露了主角的背景——原来这些怪物都是他过去带来的梦魇。</p>
+<p>了解完整故事后，你会发现主角并不完全是受害者。他为了和外遇对象在一起，可能故意制造了车祸，导致妻子和女儿死亡，家庭破裂。最终，他自己也在悔恨与病痛中死去，灵魂被困在反派马拉克的噩梦领域。</p>
+<p>这个剧情的展现方式很特别。虽然你现在已经知道了大概，但我仍然推荐你去亲自体验。游戏通过层层引导，慢慢补全主角的背景故事，充满了“梦境”般的质感。</p>
+<center>✅剧透警告解除。</center>
+
+<p>当然，游戏剧情并不是我最想分享的。我更想说的是自己如何克服恐惧的过程 —— 希望这能给你一些启发。或许你害怕的东西，并没有想象中那么可怕。</p>
+<h1 id="二、逃出大厦：职场第一课"><a href="#二、逃出大厦：职场第一课" class="headerlink" title="二、逃出大厦：职场第一课"></a>二、逃出大厦：职场第一课</h1><p><strong>＊个人经历，不代表整个行业。</strong></p>
+<p>寒假前，一次偶然的机会，我得到了某教育培训机构的学生助理实习岗位。  </p>
+<p>抱着“长长见识”的心态，我参加了面试。面试过程中，对方完全没有提及合同事宜，所有交代都是口头的——不过我全程录了音。招聘公告上写着“工资根据实习情况 5000-6000”，但面试时对方却说：“工资方面，大学生普遍给三千，你这边没问题吧？”我当时没有提出质疑，只回了句“可以”。毕竟那时只想见识一下，没考虑太多。</p>
+<p>在约定上班日期的六天前，我就被拉进了工作群，收到了 14 个附件——几十页的助教手册、考勤表、分数对照表、名牌模板等等，内容极其繁杂。对方还要求我在几天内完成“开营”准备。尽管材料多得让人头疼，我还是在几天内一点点梳理出了助教工作的真实流程，并把所有步骤整理成了一张完整的思维导图。</p>
+<p>![[Pasted image 20260311130622.png]]<br>![[Pasted image 20260311130659.png]]</p>
+<p>和你想的“助教”可能不太一样——这里的助教更像是“班主任+客服+老师助理”的三合一角色。我的工作包括：协助主讲老师教学，打印和发放课前测、课后测，收发学生名牌，为每个学生每节课写点评，课中批改课前测，课后批改课后测，统计错题并汇报给主讲老师，回答家长问题，甚至给家长指路……</p>
+<p>我寒假在广州多留了近一个月，住在学校宿舍。宿舍离公司有一个小时的公交车程，为了在 8:30 前到公司，我得 7:30 前出门，也就是 7 点就要起床。名义上的下班时间是 21:30 左右，但实际上必须等每个学生都离开才能走，所以实际下班通常是 22:00-22:30，回到寝室已是 23:00-23:30。而寝室 23:00 就熄灯，每天回去都是一片漆黑，只能靠阳台灯和“酷毙灯”照明，感觉自己像住在洞里的老鼠。  </p>
+<p>从第一天还带电脑回来打游戏，到第二天干脆不带电脑——晚上回到寝室只想赶紧洗澡睡觉，每天都觉得没有盼头。这样的上下班时间严重超标，而且即便我不洗澡、倒头就睡，也睡不满 8 小时。最要命的是，需要连续工作两个星期，周末无休。  </p>
+<p>我每天洗完澡爬上床时都在哭。批改四十多份课前测和课后测、同时管理两个班、留堂到晚上十点、永远不足的睡眠、望不到头的连轴转……这一切让我精疲力尽。</p>
+<p>最终，我只在这家机构待了三天就提出离职。加上离职后的交接，一共干了五天。  </p>
+<p>我遇到的孩子们都特别可爱。只是想到这个社会给他们的竞争压力这么大，心里有些不是滋味——不然，他们也不该在晚上九点还坐在这里上课。</p>
+<p>值得注意的是，和我同期入职的几位助教，都反映面试时遇到了各种问题：比如根据大学年级不同开出不同工资，却谎称“大学生薪资统一”；谎报工作时间；谎报工作内容。入职后还发现，很多超出职责范围的事情都变成了你的任务，实际工时远高于规定工时，甚至最后还被降薪。  </p>
+<p>但由于入职时没有签署劳动合同，我们几乎没有证据维权。后来了解到，连主讲老师也没有和老板签合同——这就很有意思了。  </p>
+<p>总的来说，希望大家能从我的经历中吸取教训：工作内容、工作时间和薪资标准，都应在入职前明确说明，并通过合同或书面形式确认。不要把“长见识”当作放弃基本劳动权益的理由。教育行业的后端运营，比我想象的还要复杂。  </p>
+<p>找工作一定要看清合同、签好合同；工作、加班一定要留痕。另外，掌握 Excel 真的能提升效率——比如用模板和 SUBSTITUTE 函数自动替换课次、日期、课堂内容，非常方便。微信输入法的跨设备剪贴板同步也很好用，电脑上复制的内容能瞬间传到手机 app（不是广告，真心推荐）。</p>
+<p>离职后的那个傍晚，我感到前所未有的开心和放松。洗澡时，我重新找回了自己——因为洗澡时，脑子里又开始像上班前那样冒出旋律了。这是从上班第一天起就消失的感觉。  </p>
+<p>还是上学好啊。</p>
+<h1 id="三、低经济幸福：GDP-不决定一切"><a href="#三、低经济幸福：GDP-不决定一切" class="headerlink" title="三、低经济幸福：GDP 不决定一切"></a>三、低经济幸福：GDP 不决定一切</h1><p>在广州读大学期间，我去过周边一些城市游玩，发现无论地方看起来多么朴素，总能找到零食有鸣、麦当劳和肯德基的身影。</p>
+<p>回到我老家所在的重庆县城，我发现这里只有一家肯德基，没有麦当劳。这让我不禁好奇：这个县的经济状况到底如何？一提到经济，最著名的量化指标莫过于 GDP。于是我制作了一份详细的表格，整理了 2024 年各级行政单位的 GDP 数据，得出了一些有趣的结论：  </p>
+<p>• 深圳市宝安区 &gt; 日本京都府<br>• 广州市天河区 &gt; 贵阳市<br>• 东莞市 &gt; 北海道<br>• 佛山市 &gt; 西安市<br>• 成都市 &gt; 贵州省<br>• 广州市 &gt; 香港特别行政区<br>• 湖北省、河南省、山东省 &gt; 东京都<br>• 广东省 &gt; 纽约州<br>• 得克萨斯州 &gt; 加拿大<br>• 加利福尼亚州 &gt; 英国  </p>
+<p>这种跨越行政层级的反直觉对比，引发了我更深的思考。</p>
+<p>不同城市的发展定位不同，所处的城市化阶段也不同，导致表面数据存在各种差异。而且，GDP 总量高，人均未必高。比如，虽然广东省的 GDP 总量超过纽约州，但纽约州的人均 GDP 是广东省的 6 倍。可见，单纯比较 GDP 总量是相当狭隘的。</p>
+<p>但比起讨论用什么标准衡量经济更合适，我意识到：经济数据如何，其实与我的生活关系不大。在老家，我可以花整个下午在茶馆听老人摆龙门阵（闲聊）。这里没有“996”的焦虑，却有“慢慢来”的从容。GDP 衡量的是生产力，但幸福需要的是“浪费”时间的自由。</p>
+<p>数据告诉我们哪里“富”，但生活告诉我们哪里“好”。纽约的钢铁丛林再高，也没有家里妈妈做的糖醋排骨暖胃；东京的霓虹再亮，也比不上老家夜空里清晰的星光。经济发展很重要，但它应该是为了让生活更幸福，而不是反过来，让幸福被 GDP 定义。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/03/12/%E5%A4%B1%E8%B8%AA%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%9C%88%EF%BC%9A%E6%88%91%E5%9C%A8%E5%BF%99%E4%BB%80%E4%B9%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Rayy Summers">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RayView">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | RayView">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/03/12/%E5%A4%B1%E8%B8%AA%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%9C%88%EF%BC%9A%E6%88%91%E5%9C%A8%E5%BF%99%E4%BB%80%E4%B9%88/" class="post-title-link" itemprop="url">失踪的两个月：我在忙什么</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-03-12 16:06:19" itemprop="dateCreated datePublished" datetime="2026-03-12T16:06:19+08:00">2026-03-12</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/03/12/Hello-World-0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Rayy Summers">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RayView">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | RayView">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/03/12/Hello-World-0/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-03-12 15:41:28" itemprop="dateCreated datePublished" datetime="2026-03-12T15:41:28+08:00">2026-03-12</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/03/12/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Rayy Summers">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RayView">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | RayView">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/03/12/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2026-03-12 15:40:00 / 修改时间：15:41:47" itemprop="dateCreated datePublished" datetime="2026-03-12T15:40:00+08:00">2026-03-12</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>这是一篇测试文章，看看字体效果如何。</p>
+<h2 id="中英文混排测试"><a href="#中英文混排测试" class="headerlink" title="中英文混排测试"></a>中英文混排测试</h2><p>Hello World! 你好世界！</p>
+<p><strong>粗体测试 Bold</strong> 和 <em>斜体测试 Italic</em></p>
+<h3 id="标点符号测试"><a href="#标点符号测试" class="headerlink" title="标点符号测试"></a>标点符号测试</h3><p>中文标点：，。！？；：””<br>英文标点: ,.!?;:””</p>
+<h3 id="数字测试"><a href="#数字测试" class="headerlink" title="数字测试"></a>数字测试</h3><p>1234567890<br>1,234,567.89</p>
+<h3 id="代码测试"><a href="#代码测试" class="headerlink" title="代码测试"></a>代码测试</h3><p><code>inline code</code></p>
+<pre><code class="language-python">print(&quot;Hello World&quot;)
+</code></pre>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Rayy Summers</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
