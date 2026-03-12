@@ -67,11 +67,12 @@
 
 
 <!-- Inter Font -->
-<link rel="preconnect" href="https://rsms.me/">
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- Heti Chinese Typography -->
-<link rel="stylesheet" href="https://unpkg.com/heti/umd/heti.min.css">
+<!-- Material Web (MD3) -->
+<script type="module" src="https://esm.run/@material/web/all.js"></script>
 
 <!-- Zhudou Sans & Source Han Sans SC -->
 <style>
@@ -91,25 +92,24 @@
   font-display: swap;
 }
 
+/* MD3 Theme Tokens */
 :root {
+  --md-sys-color-primary: #6750A4;
+  --md-sys-color-on-primary: #FFFFFF;
+  --md-sys-color-primary-container: #EADDFF;
+  --md-sys-color-on-primary-container: #21005D;
+  --md-sys-color-surface: #FEF7FF;
+  --md-sys-color-surface-variant: #E7E0EC;
+  --md-sys-color-on-surface: #1D1B20;
+  --md-sys-color-on-surface-variant: #49454F;
+  --md-sys-color-outline: #79747E;
+  
+  --md-sys-typescale-body-large-font: 'Inter', 'Source Han Sans SC', sans-serif;
+  --md-sys-typescale-title-large-font: 'Inter', 'Source Han Sans SC', sans-serif;
+  
   font-family: Inter, 'Zhudou Sans', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1;
-}
-
-/* Heti 字体继承 */
-.heti {
-  font-family: inherit;
 }
 </style>
-
-<!-- Heti Enhancement Script -->
-<script src="https://unpkg.com/heti/umd/heti-addon.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const heti = new Heti('.post-body, .entry-content');
-  heti.autoSpacing();
-});
-</script>
 
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
